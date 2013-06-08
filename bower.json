@@ -11,7 +11,8 @@
     "backbone": "~0.9.10",
     "modernizr": "~2.6.2",
     "font-awesome-more": "latest",
-    "i18next": "~1.6.3"
+    "i18next": "~1.6.3",
+    "bumbler-to-speech": "https://github.com/zhusee2/bumbler-to-speech.git"
   },
   "devDependencies": {}
 }
