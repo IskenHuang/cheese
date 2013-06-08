@@ -6,6 +6,8 @@ require.config(
         bootstrapModal : '../components/bootstrap/js/bootstrap-modal'
         text           : '../components/requirejs-text/text'
         i18next        : '../components/i18next/release/i18next.amd.withJQuery-1.6.3.min'
+        DrawChinese    : '../components/DrawChinese/DrawChinese'
+        bumblerSpeech  : '../components/bumbler-to-speech/javascripts/application'
 
     shim:
         underscore:
@@ -17,6 +19,8 @@ require.config(
             deps: ['jquery']
             exports: 'jquery'
         bootstrapModal:
+            deps: ['jquery']
+        bumblerSpeech:
             deps: ['jquery']
 )
 
