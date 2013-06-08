@@ -2,7 +2,7 @@ Cheese
 ======
 
 # how to used
-step1. install nodejs<http://nodejs.org/>, git<http://git-scm.com/>
+step1. install [nodejs](http://nodejs.org/), [git](http://git-scm.com/)
 step2. clone project
 ```bash
 git clone git@github.com:IskenHuang/cheese.git
