@@ -1,7 +1,7 @@
 Cheese
 ======
 
-# how to used
+# how to use
 step1. install [nodejs](http://nodejs.org/), [git](http://git-scm.com/)
 step2. clone project
 ```bash
