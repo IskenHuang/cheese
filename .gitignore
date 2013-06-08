@@ -2,6 +2,7 @@ node_modules
 temp
 dist
 app/components
+*.swp
 
 # cache files
 .app
