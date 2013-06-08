@@ -4,6 +4,26 @@ define [
 ], (Backbone, I18Next) ->
     App =
         init: () ->
+            @cheeseRoutes = 
+                routes : 
+                    thanks : "showThanksView"
+                    top100 : "showTop100View"
+                    numbers : "showNumbersView"
+                    exam : "showExamView"
+
+                showThanksView : () ->
+                    console.log "showThanksView"
+
+                showTop100View : () ->
+                    console.log "showTop100View"
+                    
+                showNumbersView : () ->
+                    console.log "showNumbersView"
+
+                showExamView : () ->
+                    console.log "showExamView"
+
+                        
             # initialize router, views, data and layouts
         start: () ->
             App.init()
@@ -22,10 +42,13 @@ define [
                 $('[data-i18n]').i18n()
             )
 
+            ourRouters = Backbone.Router.extend @cheeseRoutes
+            new ourRouters
+
             Backbone.history.start()
+
         # Views: {}
         # Models: {}
         # Collections: {}
-        # Routers: {}
 
     return App;
