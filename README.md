@@ -27,4 +27,7 @@ production build in 'dist' folder
 grunt build
 ```
 
+# Troubleshooting(wiki page)
+[https://github.com/IskenHuang/cheese/wiki/Troubleshooting](https://github.com/IskenHuang/cheese/wiki/Troubleshooting)
+
 # license MIT
