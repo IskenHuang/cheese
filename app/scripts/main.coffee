@@ -8,6 +8,7 @@ require.config(
         i18next        : '../components/i18next/release/i18next.amd.withJQuery-1.6.3.min'
         DrawChinese    : '../components/DrawChinese/DrawChinese'
         bumblerSpeech  : '../components/bumbler-to-speech/javascripts/application'
+        raphael        : '../components/raphael/raphael'
 
     shim:
         underscore:
@@ -22,8 +23,15 @@ require.config(
             deps: ['jquery']
         bumblerSpeech:
             deps: ['jquery']
+        i18next:
+            deps: ['jquery']
+        raphael:
+            deps: ['jquery']
+        DrawChinese:
+            deps: ['jquery', 'raphael']
+            exports: 'DrawChinese'
 )
 
-define ['app', 'jquery'], (App, $) ->
-# require ['app', 'jquery'], (App, $) ->
+# define ['app', 'jquery'], (App, $) ->
+require ['app', 'jquery'], (App, $) ->
     App.start()
