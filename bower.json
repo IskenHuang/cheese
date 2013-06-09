@@ -13,7 +13,8 @@
     "font-awesome-more": "latest",
     "i18next": "~1.6.3",
     "bumbler-to-speech": "https://github.com/zhusee2/bumbler-to-speech.git",
-    "DrawChinese": "https://github.com/IskenHuang/zh-stroke.git"
+    "DrawChinese": "https://github.com/IskenHuang/zh-stroke.git",
+    "raphael" : "https://github.com/DmitryBaranovskiy/raphael.git"
   },
   "devDependencies": {}
 }
