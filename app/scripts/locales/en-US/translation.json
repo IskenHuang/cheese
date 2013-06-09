@@ -2,5 +2,11 @@
     "product": {
         "name": "Cheese",
         "slogan": "Yo~~"
+    },
+    "header": {
+    	"top100": "Top100",
+    	"numbers": "Numbers",
+    	"exam": "Exam",
+    	"thanks": "Acknowledgement"
     }
 }
