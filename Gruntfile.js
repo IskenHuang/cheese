@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                 port: 9000,
                 // change this to '0.0.0.0' to access the server from outside
                 // default is 'localhost'
-                hostname: 'localhost'
+                hostname: '0.0.0.0'
             },
             livereload: {
                 options: {
@@ -288,6 +288,17 @@ module.exports = function (grunt) {
                         'scripts/{,*/}*.js'
                     ]
                 }]
+            },
+            dataUTF8: {
+                files: [{
+                    expand: true,
+                    dot: true,
+                    cwd: '<%= yeoman.app %>/components/DrawChinese/',
+                    dest: '.tmp',
+                    src: [
+                        'data/utf8/{,*/}*.xml'
+                    ]
+                }]
             }
         },
         bower: {
@@ -312,6 +323,13 @@ module.exports = function (grunt) {
                     stdout: true,
                     stderr: true
                 }
+            },
+            linkDataUTF8: {
+                command: 'ln -s ../app/components/DrawChinese/data ./.tmp/data',
+                options: {
+                    stdout: true,
+                    stderr: true
+                }
             }
         },
     });
@@ -329,6 +347,7 @@ module.exports = function (grunt) {
             'compass:server',
             'livereload-start',
             'connect:livereload',
+            'shell:linkDataUTF8',
             'open',
             'watch'
         ]);
