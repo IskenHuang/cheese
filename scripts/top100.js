@@ -7,7 +7,7 @@
     $(".top100_block").append($("#template-top100-holder").html());
     draw.strokeWord("永");
     tts.gcinSpeach("ㄩㄥ3");
-    $.getJSON("../data/top100.json", function(data) {
+    $.getJSON("data/top100.json", function(data) {
       $.each(data, function(key, val) {
         var template;
         template = $("#template-top100-grid-row").html();
