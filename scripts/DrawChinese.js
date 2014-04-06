@@ -50,7 +50,7 @@
     };
 
     DrawChinese.prototype.fetchStrokeXml = function(code, cb) {
-      return $.get("../data/utf8/" + code.toLowerCase() + ".xml", cb, "xml");
+      return $.get("data/utf8/" + code.toLowerCase() + ".xml", cb, "xml");
     };
 
     DrawChinese.prototype.strokeWord = function(word, cb) {

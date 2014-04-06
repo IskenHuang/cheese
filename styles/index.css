@@ -324,7 +324,7 @@ li {
 }
 /* line 111, ../app/styles/index.scss */
 .header .container .mobile-nav {
-  background-image: url("/images/ic_menu.png");
+  background-image: url("../images/ic_menu.png");
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -505,7 +505,7 @@ li {
 }
 /* line 291, ../app/styles/index.scss */
 .mobile-menu-container .mobile-menu-arrow {
-  background-image: url("/images/ic_arrowup_phone.png");
+  background-image: url("../images/ic_arrowup_phone.png");
   width: 34px;
   height: 34px;
   position: absolute;
