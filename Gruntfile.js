@@ -104,14 +104,6 @@ module.exports = function (grunt) {
                 'test/spec/{,*/}*.js'
             ]
         },
-        buster: {
-            test: {
-                config: 'test/buster.js'
-            },
-            server: {
-                port: 1111
-            }
-        },
         coffee: {
             dist: {
                 files: [{
@@ -154,31 +146,6 @@ module.exports = function (grunt) {
         /*concat: {
             dist: {}
         },*/
-        requirejs: {
-            dist: {
-                // Options: https://github.com/jrburke/r.js/blob/master/build/example.build.js
-                options: {
-                    // `name` and `out` is set by grunt-usemin
-                    baseUrl: '.tmp/scripts',
-                    optimize: 'none',
-                    paths: {
-                        //Comment out this line to go back to loading
-                        //the non-optimized main.js source file.
-                        'main': 'main'
-                    },
-                    // TODO: Figure out how to make sourcemaps work with grunt-usemin
-                    // https://github.com/yeoman/grunt-usemin/issues/30
-                    //generateSourceMaps: true,
-                    // required to support SourceMaps
-                    // http://requirejs.org/docs/errors.html#sourcemapcomments
-                    preserveLicenseComments: false,
-                    useStrict: true,
-                    wrap: true,
-                    name: 'main',
-                    //uglify2: {} // https://github.com/mishoo/UglifyJS2
-                }
-            }
-        },
         useminPrepare: {
             html: '<%= yeoman.app %>/index.html',
             options: {
@@ -201,16 +168,6 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= yeoman.app %>/images',
                     src: '{,*/}*.{png,jpg,jpeg}',
-                    dest: '<%= yeoman.dist %>/images'
-                }]
-            }
-        },
-        svgmin: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= yeoman.app %>/images',
-                    src: '{,*/}*.svg',
                     dest: '<%= yeoman.dist %>/images'
                 }]
             }
@@ -262,44 +219,17 @@ module.exports = function (grunt) {
                     ]
                 }]
             },
-            testBuild: {
+            data: {
                 files: [{
                     expand: true,
                     dot: true,
-                    cwd: '<%= yeoman.app %>',
-                    dest: '<%= yeoman.dist %>',
+                    cwd: '<%= yeoman.app %>/data/',
+                    dest: '.tmp',
                     src: [
-                        '*.{ico,txt}',
-                        '.htaccess'
+                        'data/**/*'
                     ]
                 }]
             },
-            prepareRequirejs: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= yeoman.app %>',
-                    dest: '.tmp',
-                    src: [
-                        'components/requirejs/require.js',
-                        'components/jquery/jquery.js',
-                        'components/underscore/underscore.js',
-                        'components/backbone/backbone.js',
-                        'scripts/{,*/}*.js'
-                    ]
-                }]
-            },
-            dataUTF8: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= yeoman.app %>/components/DrawChinese/',
-                    dest: '.tmp',
-                    src: [
-                        'data/utf8/{,*/}*.xml'
-                    ]
-                }]
-            }
         },
         bower: {
             options: {
@@ -317,20 +247,6 @@ module.exports = function (grunt) {
                     stderr: true
                 }
             },
-            linkComponenets: {
-                command: 'ln -s ../app/components ./dist',
-                options: {
-                    stdout: true,
-                    stderr: true
-                }
-            },
-            linkDataUTF8: {
-                command: 'ln -s ../app/components/DrawChinese/data ./.tmp/data',
-                options: {
-                    stdout: true,
-                    stderr: true
-                }
-            }
         },
     });
 
