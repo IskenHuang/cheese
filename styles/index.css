@@ -312,14 +312,14 @@ li {
   float: right;
 }
 /* line 98, ../app/styles/index.scss */
-.header .container .che_nav div {
+.header .container .che_nav span {
   cursor: pointer;
   width: auto;
   padding: 10px 30px;
   float: left;
 }
 /* line 105, ../app/styles/index.scss */
-.header .container .che_nav div:hover {
+.header .container .che_nav span:hover {
   background-color: #F7F7F7;
 }
 /* line 111, ../app/styles/index.scss */
