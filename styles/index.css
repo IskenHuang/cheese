@@ -324,7 +324,7 @@ li {
 }
 /* line 111, ../app/styles/index.scss */
 .header .container .mobile-nav {
-  background-image: url(images/ic_menu.png);
+  background-image: url(../images/ic_menu.png);
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -505,7 +505,7 @@ li {
 }
 /* line 291, ../app/styles/index.scss */
 .mobile-menu-container .mobile-menu-arrow {
-  background-image: url(images/ic_arrowup_phone.png);
+  background-image: url(../images/ic_arrowup_phone.png);
   width: 34px;
   height: 34px;
   position: absolute;
@@ -627,7 +627,7 @@ li {
 }
 /* line 413, ../app/styles/index.scss */
 .footer .dropdown .dropdown-toggle {
-  background-image: url(images/icon_lang_s.png);
+  background-image: url(../images/icon_lang_s.png);
   background-position: 0px 0px;
   background-repeat: no-repeat;
   padding: 4px 0 3px 24px;
@@ -708,7 +708,7 @@ li {
 /* line 492, ../app/styles/index.scss */
 .footer .external_link .nav .spot {
   display: inline-block;
-  background-image: url(images/ic_dot.png);
+  background-image: url(../images/ic_dot.png);
   width: 18px;
   height: 18px;
   margin: 0 10px;
@@ -767,7 +767,7 @@ li {
 
 /* line 564, ../app/styles/index.scss */
 div.growlUI {
-  background: url(images/info.png) no-repeat 10px 10px;
+  background: url(../images/info.png) no-repeat 10px 10px;
 }
 
 /* line 565, ../app/styles/index.scss */
