@@ -4,7 +4,7 @@ $ ->
     $(".top100_block").append $("#template-top100-holder").html()
     draw.strokeWord "永"
     tts.gcinSpeach "ㄩㄥ3"
-    $.getJSON "../data/top100.json", (data) ->
+    $.getJSON "data/top100.json", (data) ->
         $.each data, (key, val) ->
 
             # load template and replace key
