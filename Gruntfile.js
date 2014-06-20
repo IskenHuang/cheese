@@ -198,6 +198,7 @@ module.exports = function (grunt) {
                         '.htaccess',
                         'images/{,*/}*.{webp,gif}',
                         'styles/fonts/*',
+                        'audio/*',
                         'data/**/*',
                     ]
                 }]
@@ -254,7 +255,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', [
         'clean:dist',
-        'copy:dist',
+        // 'copy:dist',
         'coffee:dist',
         'compass:dist',
         'copy:dist',
